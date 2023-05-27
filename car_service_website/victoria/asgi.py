@@ -1,5 +1,5 @@
 """
-ASGI config for car_service_website project.
+ASGI config for victoria project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'car_service_website.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'victoria.settings')
 
 application = get_asgi_application()
