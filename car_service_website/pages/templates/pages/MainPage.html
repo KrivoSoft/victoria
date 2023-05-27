@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Victoria</title>
 </head>
 <body>
-    Главная страница
+  <!-- Вставляем меню -->
+  {% include 'pages/header.html' %}
+
+  <!-- Здесь будет контент главной страницы -->
+  <h1>Добро пожаловать в автосервис "Victoria"</h1>
+  <p>Мы предлагаем широкий спектр услуг по ремонту и техническому обслуживанию автомобилей.</p>
+  <img src="{% static 'images/white_auto_in_dark_room.jpg' %}" alt="Автомобиль в автосервисе">
 </body>
 </html>
