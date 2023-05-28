@@ -3,15 +3,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
   <title>Victoria</title>
 </head>
 <body>
   <!-- Вставляем меню -->
   {% include 'pages/header.html' %}
-
-  <!-- Здесь будет контент главной страницы -->
-  <h1>Добро пожаловать в автосервис "Victoria"</h1>
-  <p>Мы предлагаем широкий спектр услуг по ремонту и техническому обслуживанию автомобилей.</p>
-  <img src="{% static 'images/white_auto_in_dark_room.jpg' %}" alt="Автомобиль в автосервисе">
+  <div class="container">
+    <!-- Здесь будет контент главной страницы -->
+    <h1>Добро пожаловать в автосервис "Victoria"</h1>
+    <p>Мы предлагаем широкий спектр услуг по ремонту и техническому обслуживанию автомобилей.</p>
+    <img src="{% static 'images/white_auto_in_dark_room.jpg' %}" alt="Автомобиль в автосервисе">
+  </div>
 </body>
 </html>
