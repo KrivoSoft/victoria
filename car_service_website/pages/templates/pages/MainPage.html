@@ -19,10 +19,10 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <div class="card bg-dark text-white">
+          <div class="card bg-dark text-white mt-4">
             <img src="{% static 'images/blue_auto_in_dark_room_cutted.jpg' %}" class="card-img img-fluid image-promo" alt="Автосервис авто">
             <div class="card-img-overlay">
-              <h2 class="card-title">
+              <h2 class="promo-title">
                 Профессиональное техническое обслуживание Вашего автомобиля
               </h2>
             </div>
@@ -33,7 +33,7 @@
 
     <!--    Карточки с услугами-->
     <div class="container-fluid">
-      <div class="row">
+      <div class="row mt-5">
         <div>
           <h2>
             Что мы предлагаем
@@ -42,12 +42,12 @@
       </div>
     </div>
 
-    <!--    Блок для маленьких экранов-->
-    <div class="container d-block d-sm-none">
-      <div class="row">
-        <div class="col-6">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/replacement_of_consumables_in_a_car.jpg' %}" class="card-img img-fluid " alt="Автосервис авто">
+    <!--    Блок карточек услуг-->
+    <div class="container-fluid">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+        <div class="col">
+          <div class="card bg-dark text-white mt-4">
+            <img src="{% static 'images/replacement_of_consumables_in_a_car.jpg' %}" class="card-img img-fluid" alt="Автосервис авто">
             <div class="card-img-overlay">
               <h2 class="card-title card-services-title">
                 Плановое ТО с заменой расходников
@@ -55,9 +55,10 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/mechanic_working_car_suspension_repair_shop.jpg' %}" class="card-img img-fluid " alt="Автосервис авто">
+
+        <div class="col">
+          <div class="card bg-dark text-white mt-4">
+            <img src="{% static 'images/mechanic_working_car_suspension_repair_shop.jpg' %}" class="card-img img-fluid" alt="Автосервис авто">
             <div class="card-img-overlay">
               <h2 class="card-title card-services-title">
                 Полная диагностика авто
@@ -65,12 +66,10 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="row">
-        <div class="col-6">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/different_car_accessories_composition.jpg' %}" class="card-img img-fluid " alt="Автосервис авто">
+        <div class="col">
+          <div class="card bg-dark text-white mt-4">
+            <img src="{% static 'images/different_car_accessories_composition.jpg' %}" class="card-img img-fluid" alt="Автосервис авто">
             <div class="card-img-overlay">
               <h2 class="card-title card-services-title">
                 Запчасти
@@ -78,9 +77,10 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/cars_on_a_parking.png' %}" class="card-img img-fluid " alt="Автосервис авто">
+
+        <div class="col">
+          <div class="card bg-dark text-white mt-4">
+            <img src="{% static 'images/cars_on_a_parking.png' %}" class="card-img img-fluid" alt="Автосервис авто">
             <div class="card-img-overlay">
               <h2 class="card-title card-services-title">
                 Автоподбор
@@ -88,11 +88,10 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/car_tire.png' %}" class="card-img img-fluid " alt="Автосервис авто">
+
+        <div class="col">
+          <div class="card bg-dark text-white mt-4">
+            <img src="{% static 'images/car_tire.png' %}" class="card-img img-fluid" alt="Автосервис авто">
             <div class="card-img-overlay">
               <h2 class="card-title card-services-title text-nowrap">
                 Шиномонтаж
@@ -101,85 +100,65 @@
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/car_on_the_garage.png' %}" class="card-img img-fluid " alt="Автосервис авто">
+        <div class="col">
+          <div class="card bg-dark text-white mt-4">
+            <img src="{% static 'images/car_on_the_garage.png' %}" class="card-img img-fluid" alt="Автосервис авто">
             <div class="card-img-overlay">
               <h2 class="card-title card-services-title">
                 Развал-схождение
               </h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+      <!--    Блок "Почему стоит выбрать нас"-->
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div>
+          <h2>
+            Почему стоит выбрать нас
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5 row-cols-1 row-cols-sm-1 row-cols-md-3">
+        <div class="col d-flex justify-content-center">
+          <div class="card card-whyme text-center mt-4" style="width: 18rem;">
+            <img src="{% static 'images/sheild-dynamic-gradient.png' %}" class="card-img-top w-50 mx-auto" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Качество</h6>
+              <p class="card-text">для нас на первом месте.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+          <div class="card card-whyme text-center mt-4" style="width: 18rem;">
+            <img src="{% static 'images/star-dynamic-color.png' %}" class="card-img-top w-50 mx-auto" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Команда профессионалов</h6>
+              <p class="card-text">с большим опытом работы, которая любит своё дело.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col d-flex justify-content-center">
+          <div class="card card-whyme text-center mt-4" style="width: 18rem;">
+            <img src="{% static 'images/dollar-dynamic-color.png' %}" class="card-img-top w-50 mx-auto" alt="...">
+            <div class="card-body">
+              <h6 class="card-title">Доступные цены</h6>
+              <p class="card-text">Мы знаем потребности наших клиентов и подскажем где и как можно сэкономить.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!--    Блок для экранов побольше-->
-    <div class="container d-none d-sm-block">
-      <div class="row">
-        <div class="col-4">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/replacement_of_consumables_in_a_car.jpg' %}" class="card-img img-fluid " alt="Автосервис авто">
-            <div class="card-img-overlay">
-              <h2 class="card-title card-services-title">
-                Плановое ТО с заменой расходников
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/mechanic_working_car_suspension_repair_shop.jpg' %}" class="card-img img-fluid " alt="Автосервис авто">
-            <div class="card-img-overlay">
-              <h2 class="card-title card-services-title">
-                Полная диагностика авто
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/different_car_accessories_composition.jpg' %}" class="card-img img-fluid card-image-service" alt="Автосервис авто">
-            <div class="card-img-overlay">
-              <h2 class="card-title card-services-title">
-                Запчасти
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/cars_on_a_parking.png' %}" class="card-img img-fluid " alt="Автосервис авто">
-            <div class="card-img-overlay">
-              <h2 class="card-title card-services-title">
-                Автоподбор
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/car_tire.png' %}" class="card-img img-fluid " alt="Автосервис авто">
-            <div class="card-img-overlay">
-              <h2 class="card-title card-services-title text-nowrap">
-                Шиномонтаж
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="card bg-dark text-white">
-            <img src="{% static 'images/car_on_the_garage.png' %}" class="card-img img-fluid " alt="Автосервис авто">
-            <div class="card-img-overlay">
-              <h2 class="card-title card-services-title">
-                Развал-схождение
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
   </body>
 </html>

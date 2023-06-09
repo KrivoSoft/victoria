@@ -19,6 +19,25 @@
   }
 }
 
+/* Размер текста на баннере главной страницы */
+@media (min-width: 1200px) {
+  .promo-title {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .promo-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .promo-title {
+    font-size: 20px;
+  }
+}
+
 /* Размер текста на карточках услуг */
 @media (min-width: 1200px) {
   .card-title {
@@ -30,8 +49,4 @@
   .card-title {
     font-size: 15px;
   }
-}
-
-.card {
-    gap: 1em;
 }
