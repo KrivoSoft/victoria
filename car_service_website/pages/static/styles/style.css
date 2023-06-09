@@ -1,7 +1,7 @@
 :root {
     --color1:#000000;
-    --color2:#14213d;
-    --color3:#fca311;
+    --color2:#2292a4;
+    --color3:#bdbf09;
     --color4:#e5e5e5;
     --color5:#ffffff;
 }
@@ -49,4 +49,36 @@
   .card-title {
     font-size: 15px;
   }
+}
+
+.card-whyme {
+    background-color: var(#color4);
+}
+
+.list-footer li {
+    border: 0px;
+    background-color: var(--color3);
+}
+
+.list-footer li a{
+    color: var(--color1);
+}
+
+.list-footer li a:active{
+    color: var(--color1);
+}
+
+.list-footer li a:visited{
+    color: var(--color1);
+}
+
+.container-footer {
+    margin-top: 100px;
+    padding-top: 20px;
+    background-color: var(--color3);
+}
+
+.login-button {
+    background-color: var(--color3);
+    color: var(--color5);
 }
